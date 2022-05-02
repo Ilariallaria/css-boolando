@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
 /* COMMON */
+
+.cont{
+    width: 85%;
+    margin: 0 auto;
+}
 
 .flex{
     display: flex;
@@ -15,52 +24,110 @@ img{
     display: block;
 }
 
-ul {
-    list-style-type: none;
+.card  div span{
+    display: block;
 }
 
 
-header {
-    background-color: #df4d02;
-    color: white;
+/* HEADER */
+
+header{
     height: 50px;
-    width: 100%;
+    background-color: #e96629;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
 }
 
-nav {
+nav{
+    padding-top: 10px;
     align-items: center;
-    height: 100%;
+    color: white;
+    
 }
 
-.n-menu {
+/* n-menu*/
+
+.n-menu{
     width: 20%;
-    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
 }
-.menu-list {
-    display: flex;
-    justify-content: center;
+
+ul{
+    list-style: none;
+    align-items: center;
+    justify-content: left;
 }
-.menu-list li {
-    padding: 0 5px;
-    font-size: 14px;
-}
-.menu-list a {
-    color: inherit;
+
+a{
     text-decoration: none;
+    color: inherit;
+    padding: 0 5px;
 }
 
-.logo {
-    width:60%;
+/* logo */
+.logo{
+    width: 60%;
     justify-content: center;
-}
-.logo img{
-    height: 25px;
-    width: 110px;
-}
-.login {
-    width: 20%;
+    align-items: center;
 }
 
+.logo img{
+    width: 100px;
+}
+
+/* azioni */
+
+.azioni{
+    width: 20%;
+    font-size: 12px;
+}
+.azioni ul{
+    justify-content: right;
+}
+
+/* MAIN */
+
+main{
+    padding-top: 80px;
+}
+
+.product-list{
+    flex-wrap: wrap;
+}
+
+.col{
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+
+.card{
+    margin-top: 50px;
+    line-height: 13px;
+}
+
+.brand{
+    font-size: 12px;
+}
+
+.type{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cost{
+    color: red;
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.cost-line{
+   color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: line-through;
+
+}
