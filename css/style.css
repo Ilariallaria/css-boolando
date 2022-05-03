@@ -61,6 +61,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 nav{
@@ -132,6 +133,13 @@ main{
     line-height: 13px;
 }
 
+.heart{
+    color: black;
+    right: 0%;
+    top: 10px;
+    width: 100%;
+    position: absolute
+}
 
 .sale{
     position: relative;
@@ -165,21 +173,21 @@ main{
     left: 0%;
 }
 
-/* .heart{
-    color: black;
-    background-color: white;
-    right: 0%;
-    top: 10px;
-    width: 100%;
-} */
+.modello{
+    position: relative;
+}
 
 .modello-b{
     display: none;
 }
 
-.modello-a:hover .modello-b{
-    display: inline-block;
+.modello:hover .modello-a{
+    display: none;
 
+}
+
+.modello:hover .modello-b{
+    display: inline-block;
 }
 
 /* FOOTER */
@@ -188,4 +196,40 @@ footer{
     background-color: black;
     width: 100%;
     height: 80px;
+    color: white;
+    padding-top: 10px;
+    line-height: 30px;
+
+
 }
+
+.f-menu-left{
+    width: 50%;
+    text-align: left;
+}
+
+
+.f-menu-left ul:first-child{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.f-menu-left ul ul:last-child{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+.f-menu-right{
+    width: 50%;
+    justify-content: end;
+
+}
+
+.f-menu-right div{
+    font-weight: 700;
+    font-size: 13px;
+
+}
+.f-menu-right ul{
+
