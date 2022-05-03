@@ -24,8 +24,31 @@ img{
     display: block;
 }
 
-.card  div span{
+.testo div span{
     display: block;
+}
+
+.brand{
+    font-size: 12px;
+}
+
+.type{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cost{
+    color: red;
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.cost-line{
+   color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: line-through;
 }
 
 
@@ -108,26 +131,45 @@ main{
     line-height: 13px;
 }
 
-.brand{
+
+.sale{
+    position: relative;
     font-size: 12px;
+    font-weight: 600px;
+    color: white;
 }
 
-.type{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.cost{
-    color: red;
-    font-size: 12px;
-    font-weight: 650;
-}
-
-.cost-line{
-   color: black;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: line-through;
+.sale span{
+    position: absolute;
+    display: inline;
+    padding: 5px;
 
 }
+
+.red-sale{
+    background-color: red;
+    bottom: 70px;
+    left: 0%;
+}
+
+.green-sale{
+    background-color: green;
+    bottom: 70px;
+    left: 50px;
+}
+
+.green-sale-alone{
+    background-color: green;
+    bottom: 70px;
+    left: 0%;
+
+
+}
+
+
+/* .heart{
+    color: black;
+    background-color: white;
+    right: 0%;
+    top: 10px;
+} */
